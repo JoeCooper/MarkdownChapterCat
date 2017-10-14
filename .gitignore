@@ -1,5 +1,7 @@
 *~
 
+*.log
+
 # Prerequisites
 *.d
 
