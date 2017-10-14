@@ -63,7 +63,7 @@ int main(int argc, char* argv[]) {
 				memset(chapterBuffer, 0, chapterBufferSize);
 				fread(chapterBuffer, 1, chapterFileSize, chapterFile);
 				fclose(chapterFile);
-				snprintf(buffer, bufferSize, "# %s<span id='%s%i' />\n\n", chapterName, keyPrefix, chapterNumber);
+				snprintf(buffer, bufferSize, "# <span id='%s%i'>%s</span>\n\n", keyPrefix, chapterNumber, chapterName);
 				documentBodySize += strlen(buffer) + chapterFileSize + 2L;
 				documentBody = realloc(documentBody, documentBodySize);
 				strcat(documentBody, buffer);
