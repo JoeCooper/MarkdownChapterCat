@@ -24,3 +24,5 @@ ChapterCat is written in plain C and can be compiled with gcc with no special pa
 ```
 gcc chaptercat.c -o chaptercat
 ```
+
+Additionally, ```Makefile.am``` and ```configure.ac``` are added to provide compatability with autotools.
